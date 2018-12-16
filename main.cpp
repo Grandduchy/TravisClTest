@@ -10,7 +10,7 @@ int factorial(const int& i) {
 }
 
 bool test() {
-	factorial(10) == 3628800 ? 0 : 1;
+	return factorial(10) == 3628800 ? 0 : 1;
 }
 
 int main() {
