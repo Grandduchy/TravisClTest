@@ -16,5 +16,5 @@ bool test() {
 int main() {
 	bool b = test();
 	std::cout << std::boolalpha << b;
-	return b;
+    return 0;
 }
