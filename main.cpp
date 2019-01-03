@@ -1,20 +1,11 @@
-#include <iostream>
-#include <string>
-#include <thread>
-int factorial(const int& i) {
-	int l = 1;
-	for (int p = i; p != 1; --p){
-		l *= p;
-	}
-	return l;
-}
+#include "mainwindow.h"
+#include <QApplication>
 
-bool test() {
-	return factorial(10) == 3628800 ? 0 : 1;
-}
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
 
-int main() {
-	bool b = test();
-	std::cout << std::boolalpha << b;
-    return 0;
+    return a.exec();
 }
